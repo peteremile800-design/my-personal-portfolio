@@ -319,79 +319,86 @@ section{
     display:none;
 }
 
-@media (max-width:768px){
+@media (max-width: 768px){
 
-    nav{
-        flex-direction:row;
-        justify-content:space-between;
-        align-items:center;
-        padding:15px 20px;
+    header{
+        padding: 15px 20px;
     }
 
-    .menu-toggle{
-        display:block;
-        color:#fff;
-        font-size:30px;
-        cursor:pointer;
+    nav{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
     }
 
     nav ul{
-        display:none;
+        display: none;
+        position: absolute;
+        top: 70px;
+        left: 0;
+        width: 100%;
+        background: #111;
+        flex-direction: column;
+        text-align: center;
+        padding: 20px 0;
+        z-index: 999;
     }
 
-    #header{
-        flex-direction:column-reverse;
-        justify-content:center;
-        text-align:center;
-        padding:100px 20px 50px;
-        min-height:auto;
+    nav ul.active{
+        display: flex;
     }
 
-    .hero-text,
-    .hero-image{
-        width:100%;
+    nav ul li{
+        margin: 15px 0;
     }
 
-    .hero-image img{
-        width:70%;
-        max-width:260px;
-        margin-bottom:20px;
+    nav ul li a{
+        font-size: 18px;
     }
 
-    .hero-text h1{
-        font-size:42px;
+    .menu-toggle{
+        display: block;
+        font-size: 30px;
+        cursor: pointer;
     }
 
-    .hero-text h2{
-        font-size:28px;
+
+    /* hero */
+    .hero{
+        text-align: center;
+        padding: 50px 20px;
     }
 
-    .hero-text p{
-        font-size:18px;
+    .hero h1{
+        font-size: 35px;
     }
 
-    .btn,
-    .btn2{
-        display:block;
-        width:100%;
-        max-width:250px;
-        margin:15px auto;
+    .hero p{
+        font-size: 16px;
     }
 
-    #about,
-    #services,
-    #contact{
-        padding:70px 20px;
+
+    /* about */
+    .about{
+        flex-direction: column;
+        text-align: center;
     }
 
-    .card,
-    .service-card{
-        width:100%;
-        max-width:350px;
-        margin:auto;
+    .about img{
+        width: 250px;
+        margin-bottom: 20px;
     }
 
-    .footer-icons{
-        gap:15px;
+
+    /* projects */
+    .projects{
+        grid-template-columns: 1fr;
     }
+
+
+    /* footer */
+    footer{
+        text-align: center;
+    }
+
 }
