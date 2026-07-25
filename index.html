@@ -10,13 +10,13 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.5/css/lightbox.min.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.5/js/lightbox-plus-jquery.min.js"></script>
-    <script>
+   <script>
 const menuToggle = document.querySelector(".menu-toggle");
-const nav = document.querySelector("nav ul");
+const navLinks = document.querySelector("nav ul");
 
-menuToggle.addEventListener("click", () => {
-    nav.classList.toggle("active");
-});
+menuToggle.onclick = () => {
+    navLinks.classList.toggle("active");
+};
 </script>
 </head>
 <body>
