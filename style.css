@@ -315,69 +315,83 @@ section{
     transform:translateY(-8px);
     box-shadow:0 0 20px rgba(212,175,55,.5);
 }
-@media (max-width: 768px) {
+.menu-toggle{
+    display:none;
+}
+
+@media (max-width:768px){
 
     nav{
-        flex-direction: column;
-        padding: 15px;
+        flex-direction:row;
+        justify-content:space-between;
+        align-items:center;
+        padding:15px 20px;
+    }
+
+    .menu-toggle{
+        display:block;
+        color:#fff;
+        font-size:30px;
+        cursor:pointer;
     }
 
     nav ul{
-        flex-direction: column;
-        gap: 15px;
-        margin-top: 15px;
-    }
-
-    nav ul li{
-        margin-left: 0;
+        display:none;
     }
 
     #header{
-        flex-direction: column-reverse;
-        text-align: center;
-        padding: 80px 20px 50px;
+        flex-direction:column-reverse;
+        justify-content:center;
+        text-align:center;
+        padding:100px 20px 50px;
+        min-height:auto;
     }
 
     .hero-text,
     .hero-image{
-        width: 100%;
-    }
-
-    .hero-text h1{
-        font-size: 45px;
-    }
-
-    .hero-text h2{
-        font-size: 28px;
-    }
-
-    .hero-text p{
-        font-size: 18px;
+        width:100%;
     }
 
     .hero-image img{
-        width: 80%;
-        margin-bottom: 30px;
+        width:70%;
+        max-width:260px;
+        margin-bottom:20px;
+    }
+
+    .hero-text h1{
+        font-size:42px;
+    }
+
+    .hero-text h2{
+        font-size:28px;
+    }
+
+    .hero-text p{
+        font-size:18px;
+    }
+
+    .btn,
+    .btn2{
+        display:block;
+        width:100%;
+        max-width:250px;
+        margin:15px auto;
     }
 
     #about,
     #services,
     #contact{
-        padding: 70px 20px;
-    }
-
-    #contact h2{
-        font-size: 40px;
+        padding:70px 20px;
     }
 
     .card,
     .service-card{
-        width: 100%;
-        max-width: 350px;
+        width:100%;
+        max-width:350px;
+        margin:auto;
     }
 
     .footer-icons{
-        gap: 15px;
+        gap:15px;
     }
-}
 }
