@@ -319,19 +319,14 @@ section{
     display:none;
 }
 
-@media (max-width: 768px){
+@media (max-width: 768px) {
 
-    header{
-        padding: 15px 20px;
+    .menu-toggle {
+        display: block;
+        cursor: pointer;
     }
 
-    nav{
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-    }
-
-    nav ul{
+    nav ul {
         display: none;
         position: absolute;
         top: 70px;
@@ -339,66 +334,17 @@ section{
         width: 100%;
         background: #111;
         flex-direction: column;
-        text-align: center;
+        align-items: center;
         padding: 20px 0;
-        z-index: 999;
+        z-index: 1000;
     }
 
-    nav ul.active{
+    nav ul.active {
         display: flex;
     }
 
-    nav ul li{
+    nav ul li {
         margin: 15px 0;
-    }
-
-    nav ul li a{
-        font-size: 18px;
-    }
-
-    .menu-toggle{
-        display: block;
-        font-size: 30px;
-        cursor: pointer;
-    }
-
-
-    /* hero */
-    .hero{
-        text-align: center;
-        padding: 50px 20px;
-    }
-
-    .hero h1{
-        font-size: 35px;
-    }
-
-    .hero p{
-        font-size: 16px;
-    }
-
-
-    /* about */
-    .about{
-        flex-direction: column;
-        text-align: center;
-    }
-
-    .about img{
-        width: 250px;
-        margin-bottom: 20px;
-    }
-
-
-    /* projects */
-    .projects{
-        grid-template-columns: 1fr;
-    }
-
-
-    /* footer */
-    footer{
-        text-align: center;
     }
 
 }
