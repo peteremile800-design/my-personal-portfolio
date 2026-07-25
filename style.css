@@ -315,33 +315,69 @@ section{
     transform:translateY(-8px);
     box-shadow:0 0 20px rgba(212,175,55,.5);
 }
-
 @media (max-width: 768px) {
 
-  nav {
-    flex-direction: column;
-  }
+    nav{
+        flex-direction: column;
+        padding: 15px;
+    }
 
-  nav ul {
-    flex-direction: column;
-    gap: 15px;
-  }
+    nav ul{
+        flex-direction: column;
+        gap: 15px;
+        margin-top: 15px;
+    }
 
-  .hero {
-    flex-direction: column;
-    text-align: center;
-  }
+    nav ul li{
+        margin-left: 0;
+    }
 
-  .hero img {
-    width: 80%;
-  }
+    #header{
+        flex-direction: column-reverse;
+        text-align: center;
+        padding: 150px 20px 50px;
+    }
 
-  .projects {
-    grid-template-columns: 1fr;
-  }
+    .hero-text,
+    .hero-image{
+        width: 100%;
+    }
 
-  h1 {
-    font-size: 35px;
-  }
+    .hero-text h1{
+        font-size: 45px;
+    }
 
+    .hero-text h2{
+        font-size: 28px;
+    }
+
+    .hero-text p{
+        font-size: 18px;
+    }
+
+    .hero-image img{
+        width: 80%;
+        margin-bottom: 30px;
+    }
+
+    #about,
+    #services,
+    #contact{
+        padding: 70px 20px;
+    }
+
+    #contact h2{
+        font-size: 40px;
+    }
+
+    .card,
+    .service-card{
+        width: 100%;
+        max-width: 350px;
+    }
+
+    .footer-icons{
+        gap: 15px;
+    }
+}
 }
